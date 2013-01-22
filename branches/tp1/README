@@ -1,0 +1,42 @@
+Binome
+samson
+paumier
+
+Question 1. 
+En utilisant les classes JWindow et JLabel, réalisez une interface similaire à celle de la figure 1 (gauche). Utilisez la méthode getContentPane().add de JWindow pour ajouter le label à la fenêtre. Rendez visible votre fenêtre en utilisant la méthode setVisible. Utilisez les méthodes setSize pour modifier la taille par défaut de la fenêtre et setLocation pour modifier sa position par défaut. 
+Essayez de déplacer et redimensionner la fenêtre en utilisant la souris. Pour quelles applications est-il intéressant d’utiliser la classe JWindow ?
+Pour les applications ne nécessitant pas un redimentionement et ayant une position fixe.
+
+Note: pour positionner une fenêtre au centre de l’écran, vous pouvez utiliser la méthode
+setLocationRelativeTo(null) (JFrame). Cette méthode doit-être appelée après la méthode pack() pour obtenir un résultat correct. Expliquez pourquoi.
+Pack() utilise la taille preférable pour ses composants, une fois preferredSize calculé, la fenêtre sera placé au meilleur endroit possible.
+
+
+Question 2. 
+Remplacez la classe JWindow par la classe JFrame de manière à obtenir une interface similaire à la figure 1 (centre). Redimensionnez la fenêtre et observez comment évoluent les positions des textes du label et de la barre de titre.
+La fenêtre se redimensionne en fonction de la nouvelle taille attribuée
+
+
+Question 3. 
+Que se passe-t-il quand on clique sur le bouton de fermeture de l’application?
+La fenêtre se minimise.
+
+Utilisez la méthode setDefaultCloseOperation de JFrame pour quitter l’application quand on clique sur le bouton de fermeture.
+L'application se ferme correctement
+
+
+Question 4.
+Utilisez la méthode setResizable pour rendre la fenêtre non redimensionable
+
+
+Question 5. 
+Ajoutez à votre interface précédente une fenêtre utilisant la classe JDialog de manière à obtenir une interface similaire à la figure 1 (droite). 
+Vous réaliserez deux versions, l’une en rendant la fenêtre JDialog modale avec la JFrame, l’autre en version non-modale (notion vue en cours). Dans chaque cas, observez quand il est possible d’interagir avec la fenêtre JFrame.
+
+
+Question 6. 
+En gardant le gestionnaire de placement par défaut, BorderLayout, réalisez une interface similaire à la figure 2 gauche. Vous utiliserez ici la classe JButton pour les composants de l’interface. Redimensionnez la fenêtre et observez comment se re-dimensionnent les composants.
+
+
+Question 8.
+Réalisez une interface similaire à celle représentée figure 2 à droite en utilisant une grille de 4 lignes et 4 colonnes. Observez comment évoluent la position et la taille des boutons lors du redimensionnement de la fenêtre.
