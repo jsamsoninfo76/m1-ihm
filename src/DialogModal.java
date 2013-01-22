@@ -12,6 +12,7 @@ public class DialogModal extends JFrame {
   
   public void  initComposant(){
 	  JDialog jd = new JDialog(this,false);
+	  jd.setModal(false);
 	  jd.show();
   }
   

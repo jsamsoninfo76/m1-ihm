@@ -9,14 +9,14 @@ public class Q8Grid extends JFrame {
     this.setSize(400, 500);
     this.setLocationRelativeTo(null);
     this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);   
-    this.setLayout(new GridLayout(3,3));
+    this.setLayout(new GridLayout(4,4));
     initComposant();
     this.setVisible(true);
   }
   
   public void  initComposant(){
 	 
-	  for (int i=1 ; i<=17 ; i++)
+	  for (int i=1 ; i<17 ; i++)
 		  this.add(new JButton("Button" + i));
   }
   
