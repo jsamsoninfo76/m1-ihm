@@ -55,11 +55,12 @@ public class Q10GridBag extends JFrame {
 		  c.gridy = 2;
 		  this.add(new JButton("Button7"),c);
 		  
-		  c.fill = GridBagConstraints.VERTICAL;
-		  c.gridheight = 2;
-		  c.gridx = 0;
-		  c.gridy = 3;
-		  this.add(new JButton("Button8"),c);
+		  GridBagConstraints c2 = new GridBagConstraints();
+		  c2.fill = GridBagConstraints.VERTICAL;
+		  c2.gridheight = 2;
+		  c2.gridx = 0;
+		  c2.gridy = 3;
+		  this.add(new JButton("Button8"),c2);
 		  
 		  c.fill = GridBagConstraints.HORIZONTAL;
 		  c.gridwidth = 3;
@@ -71,8 +72,6 @@ public class Q10GridBag extends JFrame {
 		  c.gridx = 1;
 		  c.gridy = 5;
 		  this.add(new JButton("Button10"),c);
-		  
-	  
 	  }
 	  
 	  public static void main(String args[]){
