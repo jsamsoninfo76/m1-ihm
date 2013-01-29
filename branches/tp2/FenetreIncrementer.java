@@ -39,20 +39,19 @@ public class FenetreIncrementer extends JFrame{
 		
 		JButton inc = new JButton("Incrementer");
 		inc.setAlignmentX(Component.CENTER_ALIGNMENT);
-		inc.addActionListener(new ReponseAuClic());
+		inc.addActionListener(new ActionListener() { 
+			public void actionPerformed(ActionEvent e) 
+			{
+				/** * Mise a jour du label */ 
+				int val = Integer.parseInt(compteur.getText());
+				val++;
+				compteur.setText(String.valueOf(val));
+				System.out.println("Clic sur le bouton");	
+			} 
+		});
 				
 		container.add(compteur);
 		container.add(inc);
-	}
-	
-	private class ReponseAuClic implements ActionListener {
-		
-		public void actionPerformed(ActionEvent arg0) {
-			int val = Integer.parseInt(compteur.getText());
-			val++;
-			compteur.setText(String.valueOf(val));
-			System.out.println("Clic sur le bouton");	
-		}
 	}
 	
 	public static void main(String args[]){
