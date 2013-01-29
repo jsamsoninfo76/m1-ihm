@@ -60,6 +60,8 @@ public class ArdoiseMagique extends JPanel {
 		/* Les events */
 		this.addMouseListener(new MouseAdapter() {
 			public void mousePressed(MouseEvent e) {
+				if (e.getButton() == MouseEvent.BUTTON1)
+					newCurve();
 				if (e.getButton() == MouseEvent.BUTTON3) {
 					System.out.println("mousePressed : DROIT");
 					clear();
