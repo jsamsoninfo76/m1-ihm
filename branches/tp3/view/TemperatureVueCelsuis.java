@@ -10,8 +10,7 @@ import model.*;
 import controller.*;
 
 public class TemperatureVueCelsuis extends TemperatureVue {
-	public TemperatureVueCelsuis(TemperatureModel modele,
-			TemperatureController controleur, int posX, int posY) {
+	public TemperatureVueCelsuis(TemperatureModel modele, TemperatureController controleur, int posX, int posY) {
 		super("Temperature Celsuis",modele, controleur, posX, posY);
 		setDisplay(""+model.getC());
 		addUpListener(new ActionListener() {

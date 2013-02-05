@@ -11,10 +11,15 @@ public class TemperatureMVC {
 		TemperatureModel tempmod = new TemperatureModel();
 		TemperatureController tempcontrolC = new TemperatureController(tempmod);
 		TemperatureController tempcontrolF = new TemperatureController(tempmod);
+		TemperatureControllerSlider tempcontrolSliderC = new TemperatureControllerSlider(tempmod);
+		
 		TemperatureVueCelsuis pvc = new TemperatureVueCelsuis(tempmod, tempcontrolC, 100, 200);
 		TemperatureVueFarenheit tvf = new TemperatureVueFarenheit(tempmod, tempcontrolF, 100, 350);
+		TemperatureVueSliderCelsuis pvsc = new TemperatureVueSliderCelsuis(tempmod, tempcontrolSliderC, 350, 200);
+		
 		tempcontrolC.addView(pvc);
 		tempcontrolF.addView(tvf);	
+		tempcontrolSliderC.addView(pvsc);
 	}
 	
 	public static void main(String args[]) {

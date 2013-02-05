@@ -71,7 +71,7 @@ public class TemperatureController {
 		}
 	}
 
-	public void addView(TemperatureVue view) {
-		this.view = view;
+	public void addView(TemperatureVue pvsc) {
+		this.view = pvsc;
 	}
 }
