@@ -2,6 +2,12 @@ package model;
 
 import java.util.Observable;
 
+/**
+ * Model permettant d'acceder aux différentes données de couleur des batonnets.
+ * 
+ * @author Jeremie Samson & Victor Paumier
+ * @version 2
+ */
 public class ColorModel extends Observable {
 
 	private double red;

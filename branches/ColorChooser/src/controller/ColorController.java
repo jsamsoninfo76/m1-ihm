@@ -2,6 +2,12 @@ package controller;
 
 import model.ColorModel;
 
+/**
+ * Controleur des couleurs
+ * 
+ * @author Jeremie Samson & Victor Paumier
+ * @version 2
+ */
 public class ColorController {
 
 	private ColorModel model;
