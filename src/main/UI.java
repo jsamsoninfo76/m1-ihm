@@ -25,11 +25,14 @@ import model.EnsembleBatonnetModel;
 import controller.ColorController;
 import controller.EnsembleBatonnetController;
 
+/**
+ * UI est la classe qui initialise l'interface graphique de l'application.
+ * 
+ * @author Jeremie Samson & Victor Paumier
+ * @version 2
+ */
 public class UI extends JFrame {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
+
 	private int MAX_BATONNET = 10;
 	private EnsembleBatonnet ensembleBatonnetCouleur;
 	private EnsembleBatonnet ensembleBatonnetGris;
@@ -44,8 +47,12 @@ public class UI extends JFrame {
 	private JButton redoButton;
 	private JButton randomButton = new JButton("Random");
 
+	/**
+	 * Constructeur de la classe, lance les methodes d'initialisation pour
+	 * construire l'interface graphique.
+	 */
 	public UI() {
-		initUI();		
+		initUI();
 		initMenuBoutons();
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setResizable(false);
@@ -53,8 +60,11 @@ public class UI extends JFrame {
 		ensembleBatonnetCouleur.repaint();
 		this.setVisible(true);
 	}
-	
-	private void initUI(){
+
+	/**
+	 * Initialise l'interface graphique
+	 */
+	private void initUI() {
 
 		this.getContentPane().setLayout(new GridBagLayout());
 		undoManager = new UndoManager();
@@ -71,7 +81,7 @@ public class UI extends JFrame {
 			listModel[i] = cm;
 			listController[i] = new ColorController(cm);
 		}
-		
+
 		this.colorPanel = new ColorChooser(listController[0]);
 		this.ensembleBatonnetCouleur = new EnsembleBatonnetEnCouleurs(
 				listModel, listController, ensembleBatonnetModel,
@@ -93,6 +103,9 @@ public class UI extends JFrame {
 
 	}
 
+	/**
+	 * Initialise le menu des boutons
+	 */
 	private void initMenuBoutons() {
 		IndicateurRGB rgbBar = new IndicateurRGB(this.listModel,
 				this.listController, this.ensembleBatonnetCouleur);
@@ -125,17 +138,18 @@ public class UI extends JFrame {
 		this.getContentPane().add(toolBar, constraints);
 		toolBar.setOrientation(JToolBar.HORIZONTAL);
 
-		deleteButton.addActionListener(new DeleteListener(this, listController,
+		deleteButton
+				.addActionListener(new DeleteListener(this, listController,
 						listModel, MAX_BATONNET, ensembleBatonnetCouleur,
 						ensembleBatonnetGris, ensembleBatonnetController,
 						ensembleBatonnetModel, undoManager, this.undoButton,
 						colorPanel));
-		
+
 		addButton.addActionListener(new AddListener(this, listController,
 				listModel, MAX_BATONNET, ensembleBatonnetCouleur,
 				ensembleBatonnetGris, ensembleBatonnetController,
 				ensembleBatonnetModel, undoManager, colorPanel));
-		
+
 		undoButton.addActionListener(new UndoListener(this, undoManager,
 				undoButton, redoButton));
 		redoButton.addActionListener(new RedoListener(this, undoManager,

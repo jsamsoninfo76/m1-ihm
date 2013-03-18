@@ -2,6 +2,12 @@ package model;
 
 import java.util.Observable;
 
+/**
+ * Model permettant de gérer l'index de l'ensemble des batonnets
+ * 
+ * @author Jeremie Samson & Victor Paumier
+ * @version 2
+ */
 public class EnsembleBatonnetModel extends Observable {
 
 	// Index de la barre selectionne
