@@ -14,7 +14,7 @@ import controleur.ColorController;
  * Implémentation du UNDO
  * 
  * @author Jeremie Samson & Victor Paumier
- * @version 2
+ * @version 37
  */
 public class AddUndoableList extends AbstractUndoableEdit {
 

@@ -6,7 +6,7 @@ import java.awt.Color;
  * MesCouleurs permet d'optimiser le choix de la couleur pour le niveau de gris.
  * 
  * @author Jeremie Samson & Victor Paumier
- * @version 2
+ * @version 19
  */
 public class MesCouleurs extends Color implements Comparable {
 

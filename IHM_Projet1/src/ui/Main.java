@@ -4,7 +4,7 @@ package ui;
  * Main lance l'application.
  * 
  * @author Jeremie Samson & Victor Paumier
- * @version 2
+ * @version 4
  */
 public class Main {
 

@@ -12,7 +12,7 @@ import ui.UI;
  * Listener sur le bouton Redo
  * 
  * @author Jeremie Samson & Victor Paumier
- * @version 2
+ * @version 34
  */
 public class RedoListener implements ActionListener {
 	

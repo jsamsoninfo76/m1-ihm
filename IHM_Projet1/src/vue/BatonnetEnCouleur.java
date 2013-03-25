@@ -14,7 +14,7 @@ import controleur.EnsembleBatonnetController;
  * Sous classe de Batonnet pour les couleurs
  * 
  * @author Jeremie Samson & Victor Paumier
- * @version 2
+ * @version 41
  */
 public class BatonnetEnCouleur extends Batonnet{
 

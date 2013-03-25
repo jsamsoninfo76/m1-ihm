@@ -6,7 +6,7 @@ import modele.ColorModel;
  * Controleur des couleurs
  * 
  * @author Jeremie Samson & Victor Paumier
- * @version 2
+ * @version 8
  */
 public class ColorController {
 

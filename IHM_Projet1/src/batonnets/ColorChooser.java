@@ -14,7 +14,7 @@ import controleur.ColorController;
  * Choix des couleurs
  * 
  * @author Jeremie Samson & Victor Paumier
- * @version 2
+ * @version 13
  */
 public class ColorChooser extends JPanel {
 

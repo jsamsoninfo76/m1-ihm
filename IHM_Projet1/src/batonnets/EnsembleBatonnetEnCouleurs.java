@@ -7,6 +7,12 @@ import modele.EnsembleBatonnetModel;
 import controleur.ColorController;
 import controleur.EnsembleBatonnetController;
 
+/**
+ * Classe des batonnets de couleur
+ * 
+ * @author Jeremie Samson & Victor Paumier
+ * @version 35
+ */
 public class EnsembleBatonnetEnCouleurs extends EnsembleBatonnet {
 
 	public EnsembleBatonnetEnCouleurs(ColorModel[]listModel,ColorController[] listController,EnsembleBatonnetModel ensembleBatonnetModel,EnsembleBatonnetController ensembleBatonnetController, ColorChooser csp) {

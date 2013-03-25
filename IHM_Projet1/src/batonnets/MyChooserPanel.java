@@ -22,22 +22,22 @@ import optimiz.MesCouleurs;
  * Controleur des couleurs
  * 
  * @author Jeremie Samson & Victor Paumier
- * @version 2
+ * @version 10
  */
 public class MyChooserPanel extends AbstractColorChooserPanel {
 
 	private List<Color> lesCouleurs;
 	
-	public MyChooserPanel(List<Color> lesCouleurs2) {
-		this.lesCouleurs=lesCouleurs2;
+	public MyChooserPanel(List<Color> couleurs) {
+		this.lesCouleurs = couleurs;
 	}
 
 	@SuppressWarnings("unchecked")
 	protected void buildChooser() {
 		List<MesCouleurs> CouleursFinals=new ArrayList<MesCouleurs>();
-		if (this.lesCouleurs.size()>180) {
+		if (this.lesCouleurs.size()>30) {
 			Random r=new Random();
-			for (int i=0;i<180;i++){
+			for (int i=0;i<30;i++){
 				int next=r.nextInt(this.lesCouleurs.size());
 				CouleursFinals.add(new MesCouleurs(this.lesCouleurs.get(next)));
 			}
@@ -49,7 +49,7 @@ public class MyChooserPanel extends AbstractColorChooserPanel {
 			
 		}
 		Collections.sort(CouleursFinals);
-		setLayout(new GridLayout(15,12));
+		setLayout(new GridLayout(6,5));
 		for(MesCouleurs c:CouleursFinals){
 			makeAddButton(c);
 		}

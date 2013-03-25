@@ -21,7 +21,7 @@ import controleur.EnsembleBatonnetController;
  * Listener sur le bouton Delete
  * 
  * @author Jeremie Samson & Victor Paumier
- * @version 2
+ * @version 28
  */
 public class DeleteListener implements ActionListener {
 

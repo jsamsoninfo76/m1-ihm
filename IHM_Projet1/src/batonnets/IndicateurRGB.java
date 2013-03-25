@@ -22,7 +22,7 @@ import modele.EnsembleBatonnetModel;
  * Indicateur de rouge vert bleu
  * 
  * @author Jeremie Samson & Victor Paumier
- * @version 2
+ * @version 28
  */
 public class IndicateurRGB extends JPanel implements Observer{
 	

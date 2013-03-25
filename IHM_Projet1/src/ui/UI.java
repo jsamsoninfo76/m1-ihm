@@ -30,7 +30,7 @@ import controleur.EnsembleBatonnetController;
  * UI est la classe qui initialise l'interface graphique de l'application.
  * 
  * @author Jeremie Samson & Victor Paumier
- * @version 2
+ * @version 42
  */
 public class UI extends JFrame {
 
@@ -57,8 +57,9 @@ public class UI extends JFrame {
 		initUI();
 		initMenuBoutons();
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setSize(800, 450);
 		this.setResizable(false);
-		this.pack();
+		//this.pack();
 		ensembleBatonnetCouleur.repaint();
 		this.setVisible(true);
 	}

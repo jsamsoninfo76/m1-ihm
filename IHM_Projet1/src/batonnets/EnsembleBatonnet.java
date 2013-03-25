@@ -16,7 +16,7 @@ import controleur.EnsembleBatonnetController;
  * Classe abstraite pour les deux différents ensemble de batonnet
  * 
  * @author Jeremie Samson & Victor Paumier
- * @version 2
+ * @version 42
  */
 public abstract class EnsembleBatonnet extends JPanel {
 

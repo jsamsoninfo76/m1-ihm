@@ -12,7 +12,7 @@ import controleur.ColorController;
  * Implémentation du REDO
  * 
  * @author Jeremie Samson & Victor Paumier
- * @version 2
+ * @version 38
  */
 public class DelUndoableList extends AbstractUndoableEdit{
 

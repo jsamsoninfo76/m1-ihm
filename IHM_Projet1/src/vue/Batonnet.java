@@ -23,7 +23,7 @@ import modele.EnsembleBatonnetModel;
  * BatonnetEnCouleur et BatonnetEnGris
  * 
  * @author Jeremie Samson & Victor Paumier
- * @version 2
+ * @version 44
  */
 public class Batonnet extends JPanel implements Observer{
 

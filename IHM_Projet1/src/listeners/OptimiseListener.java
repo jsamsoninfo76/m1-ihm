@@ -18,7 +18,7 @@ import vue.Batonnet;
  * Listener sur le bouton Alea
  * 
  * @author Jeremie Samson & Victor Paumier
- * @version 2
+ * @version 17
  */
 public class OptimiseListener implements ActionListener{
 

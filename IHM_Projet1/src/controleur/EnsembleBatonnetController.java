@@ -6,7 +6,7 @@ import modele.EnsembleBatonnetModel;
  * Controleur de couleur de l'ensemble des batonnets
  * 
  * @author Jeremie Samson & Victor Paumier
- * @version 2
+ * @version 5
  */
 public class EnsembleBatonnetController {
 

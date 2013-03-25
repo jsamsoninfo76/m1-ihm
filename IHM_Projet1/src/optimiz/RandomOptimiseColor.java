@@ -8,7 +8,7 @@ import java.util.List;
  * 
  * 
  * @author Jeremie Samson & Victor Paumier
- * @version 2
+ * @version 35
  */
 public class RandomOptimiseColor {
 

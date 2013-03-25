@@ -24,7 +24,7 @@ import controleur.EnsembleBatonnetController;
  * Listener sur le bouttons ajout
  * 
  * @author Jeremie Samson & Victor Paumier
- * @version 2
+ * @version 18
  */
 public class AddListener implements ActionListener{
 	

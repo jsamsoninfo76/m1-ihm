@@ -7,6 +7,12 @@ import controleur.EnsembleBatonnetController;
 import vue.Batonnet;
 import vue.BatonnetEnGris;
 
+/**
+ * Classe des battonnets gris
+ * 
+ * @author Jeremie Samson & Victor Paumier
+ * @version 38
+ */
 public class EnsembleBatonnetEnGris extends EnsembleBatonnet {
 	public EnsembleBatonnetEnGris(ColorModel[] listModel,
 			ColorController[] listController,

@@ -12,7 +12,7 @@ import ui.UI;
  * Listener sur le bouton Undo
  * 
  * @author Jeremie Samson & Victor Paumier
- * @version 2
+ * @version 33
  */
 public class UndoListener implements ActionListener {
 	private UndoManager undoManager;

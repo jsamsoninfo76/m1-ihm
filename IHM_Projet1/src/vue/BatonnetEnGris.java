@@ -18,7 +18,7 @@ import controleur.EnsembleBatonnetController;
  * Sous classe de Batonnet pour le gris
  * 
  * @author Jeremie Samson & Victor Paumier
- * @version 2
+ * @version 41
  */
 public class BatonnetEnGris extends Batonnet{
 
@@ -30,7 +30,7 @@ public class BatonnetEnGris extends Batonnet{
 				.getBlue());
 		setBackground(new Color(niveauGris,niveauGris,niveauGris));
 		
-		/*this.addMouseListener(new MouseAdapter() {
+		this.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseReleased(MouseEvent e) {
 				super.mouseReleased(e);
@@ -62,7 +62,7 @@ public class BatonnetEnGris extends Batonnet{
 					ensembleBatonnet.repaint();
 					}
 			}
-		});*/
+		});
 	}
 
 	@Override
@@ -75,25 +75,20 @@ public class BatonnetEnGris extends Batonnet{
 		}
 	}
 	
-	
-	
 	public List<Color> algorithme(int niveauGris){
 		List<Color> res=new ArrayList<Color>();
+		//Rouge
 		for (int red=0;red<=255;red+=2){
-			
+			//Vert
 			for(int green=0;green<=255;green+=2){
-				
+				//Bleu
 				for(int blue=0;blue<255;blue+=2){
-					
-					if ((0.3*red+0.59*green+0.11*blue)==niveauGris){res.add(new Color(red,green,blue));
+					if ((0.3*red+0.59*green+0.11*blue)==niveauGris){
+						res.add(new Color(red,green,blue));
 					}
 				}
 			}
 		}
 		return res;
-		
 	}
-	
-	
-	
 }
