@@ -9,16 +9,17 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+import view.Lecteur;
 import view.Liste;
 
 /**
  * UI est la classe qui initialise l'interface graphique de l'application.
  * 
  * @author Jeremie Samson & Victor Paumier
- * @version 1
+ * @version 2
  */
 public class UI extends JFrame {
-
+	
 	/**
 	 * Constructeur de la classe, lance les methodes d'initialisation pour
 	 * construire l'interface graphique.
@@ -48,12 +49,10 @@ public class UI extends JFrame {
 		constraints.gridheight = 1;
 		this.getContentPane().add(liste, constraints);
 		
-		JPanel lecteur = new JPanel();
-		lecteur.setBackground(Color.GRAY);
+		JPanel lecteur = new Lecteur();
 		constraints.gridx = 0;
 		constraints.gridy = 0;
 		constraints.gridwidth = 1;
-		lecteur.add(new JButton("lecteur"));
 		this.getContentPane().add(lecteur, constraints);
 		
 		JPanel resume = new JPanel();
